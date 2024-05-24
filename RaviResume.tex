@@ -1,0 +1,204 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Ravi Prakash}} & Email: \href{mailto:ravi.0531.rp@gmail.com}{ravi.0531.rp@gmail.com}\\
+  \href{https://www.linkedin.com/in/ravi-prakash-4b3a33151/}{LinkedIn: https://www.linkedin.com/in/ravi-prakash-4b3a33151/} & Mobile:~~~+91-9939945218 \\
+  \href{https://github.com/ravi0531rp}{Github: ~~github.com/ravi0531rp} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shri Mata Vaishno Devi University}{Katra, India}
+      {Bachelor of Technology - ECE;  GPA: 7.3}{July 2016 - June 2020}
+
+    \resumeSubHeadingListEnd
+	    
+\vspace{5pt}
+\section{Skills Summary}
+\resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}{Python, R, SQL, C++}
+    \resumeSubItem{Domains}{Data Science, Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, MlOps, CI-CD Generative AI}
+    \resumeSubItem{Frameworks \& Libraries}{Tensorflow, Pytorch, ONNX, Triton-server, Scikit-learn, OpenCV, MongoDB, Pyspark, LangChain, Huggingface}
+    \resumeSubItem{Tools \& Softwares}{AWS Sagemaker, AWS MLOps Stack, Bedrock, Tableau, MySQL, FAISS, Docker, GIT, JIRA, DVC, WanDB }
+    \resumeSubItem{Platforms}{Linux, AWS, Azure}
+    \resumeSubItem{Soft Skills}{Teamwork, Problem Solving, Communication}
+\resumeSubHeadingListEnd
+
+
+\resumeSubHeadingListEnd
+\vspace{5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Eagleview India}{Bangalore}
+    {Data Scientist II (Full-time)}{Apr 2022 - Present}
+    \resumeItemListStart
+        \resumeItem{Image Obstruction Inpainting}{(Apr 2024 - May 2024)}
+        { 
+            \begin{itemize}[leftmargin=*]
+                \item Completed the POC for a use case for removing obstruction in images fed to various other models.
+                \item Achieved SSIM of 0.88 with T-former inpainting architecture.
+                \item An average increment of 0.2 in the F1-score was achieved on the dependent models with the inpainting model's inclusion in the pre-processing.
+            \end{itemize}
+        }
+        \resumeItem{Property Structure Height Model Development}{(Jan 2024 - Apr 2024)}
+        { 
+            \begin{itemize}[leftmargin=*]
+                \item Led the development and deployment of the LETR (Transformer) model to generate Eave and Ground lines of Buildings.
+                \item Did significant customization on the evaluation metrics to obtain a model with 96 per cent predictions within 2 feet of ground truth heights.
+                \item Deployed the model using Triton-server on AWS Sagemaker. Set up inference pipeline with AWS Lambda and Step Functions.
+            \end{itemize}
+        }
+        \resumeItem{CodeLLama for Internal Libraries - NLP}{(Mar 2024 - Apr 2024)}
+        { 
+            \begin{itemize}[leftmargin=*]
+                \item Led the Development of a code generator for internal libraries, after fine-tuning CodeLlama with QLora.
+                \item MLops best practices followed using WanDB, DVC.
+                \item Achieved 32 per cent accuracy for the internal test cases with the generated code. The readability score was 46 percent.
+            \end{itemize}
+        }
+        \resumeItem{Confidence Index Model Development}{(Jun 2023 - Sep 2023)}
+        {
+            \begin{itemize}[leftmargin=*]
+                \item Designed and deployed an XGBoost-based model to evaluate the confidence index of CNN predictions.
+                \item Enhanced output accuracy by 28\%, facilitating quality control processes for large-scale client orders in the scale of millions.
+            \end{itemize}
+        }
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {TCS (Digital)}{Bangalore}
+    {Data Scientist I (Full-time)}{Aug 2020 - Mar 2022}
+    \resumeItemListStart
+
+        \resumeItem{MultiCamera Customer Tracking System: Bestbuy (USA)}{(Sep 2021 - Feb 2022)}
+        { 
+            \begin{itemize}[leftmargin=*]
+                \item Led the development of multi-camera multi-person tracking software.
+                \item Was able to run tracking on 30+ cameras simultaneously by using multithreaded ingestion and processing.
+                 \item Used OpenVino for Model Optimization and got an increment of 20fps in throughput. Deployment was done on Edge devices using Movidius VPUs.
+            \end{itemize}
+        }
+        
+
+
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+       
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{Personal Projects}
+\resumeSubHeadingListStart
+
+\resumeSubItem{WEB-RAG: LLM Based Web Scraper and Chatbot (Mar 2024 - Ongoing) - NLP}
+{
+    \begin{itemize}[itemsep=3pt,parsep=0pt,topsep=1pt]
+        \item Created a Chatbot to streamline user inquiries directly from the website's homepage.
+        \item Implemented recursive parsing of content up to any depth by traversing embedded links for comprehensive data retrieval.
+        \item Utilized FAISS vectorDB for efficient information storage and leveraged multiple LLMs like Gemini, OpenAI's GPT and Llama2 for seamless query processing.
+    \end{itemize}
+}
+
+
+\resumeSubHeadingListEnd
+
+
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Founder and AI Lead at Robotics Club, SMVDU}{Katra, India}
+    {Conducted AI and Robotics training impacting over 200 students.}{Oct 2018 - Jan 2020}
+\resumeSubHeadingListEnd
+
+\end{document}
